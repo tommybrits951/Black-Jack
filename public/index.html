@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./deck/ace_of_spades.png" type="image/x-icon">
+    <title>Black Jack</title>
+
+
+</head>
+
+<body>
+    <main id="main">
+        <section id="dealerSection">
+            <div id="dealerHand"></div>
+            <div id="scores" class="hidden">
+                <h2>Scores</h2>
+                <h3>Dealer: <span id="dealerScoreDisp"></span></h3>
+                <h3>User: <span id="userScoreDisp"></span></h3>
+            </div>
+        </section>
+        <section id="userSection">
+            <div id="betCont">
+                <h2>Place Bet</h2>
+                <h3>Bet: $<span id="betDisp"></span></h3>
+                <h3>Wallet: $<span id="walletDisp"></span></h3>
+                <div class="bet-btns">
+                    <button class="bet-btn">-</button>
+                    <button class="deal-btn">Deal</button>
+                    <button class="bet-btn">+</button>
+                </div>
+            </div>
+            <div id="userHand">
+
+            </div>
+            <div class="play-btns">
+                <button class="btn" id="hitBtn">Hit</button>
+                <button class="btn" id="standBtn">Stand</button>
+                <button class="btn" id="doubleBtn">Double</button>
+                <button class="btn" id="splitBtn">Split</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

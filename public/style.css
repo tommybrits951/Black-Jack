@@ -1,0 +1,133 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+}
+
+section {
+    max-height: 50vh;
+    min-height: 40vh;
+    padding: 0;
+    margin: 0;
+}
+
+#betCont {
+    position: absolute;
+    top: 50;
+    left: 40%;
+    border: 2px inset white;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+#betCont>h2 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    color: darkblue;
+}
+
+#betCont>h3 {
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bet-btn,
+.deal-btn {
+    padding: 10px 12px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+}
+
+.bet-btn:hover,
+.deal-btn:hover,
+.btn:hover {
+    scale: 115%;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#scores {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    background-color: black;
+    border: 2px outset white;
+    border-radius: 12px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+}
+
+#scores>h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: darkblue;
+}
+
+#userHand {
+    position: absolute;
+    left: 40%;
+    top: 70%;
+}
+
+#dealerHand {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+.card-div {
+    position: absolute;
+    height: 20vh;
+}
+
+.card-img {
+    height: 100%;
+}
+
+.play-btns {
+    flex-direction: column;
+    width: 20vw;
+    border: 2px inset white;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: black;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+#splitBtn {
+    display: none;
+}
