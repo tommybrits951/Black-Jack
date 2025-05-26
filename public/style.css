@@ -35,12 +35,13 @@ section {
 #betCont>h2 {
     font-size: 2.5rem;
     text-decoration: underline;
-    color: darkblue;
+    color: yellowgreen;
 }
 
 #betCont>h3 {
     font-size: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .bet-btn,
@@ -52,11 +53,13 @@ section {
     outline: none;
     font-size: 2rem;
 }
-
+.end-btns {
+    display: none;
+}
 .bet-btn:hover,
 .deal-btn:hover,
 .btn:hover {
-    scale: 115%;
+    scale: 95%;
     background-color: white;
     color: black;
     cursor: pointer;
@@ -81,7 +84,7 @@ section {
 #scores>h2 {
     text-align: center;
     text-decoration: underline;
-    color: darkblue;
+    color: yellowgreen;
 }
 
 #userHand {
@@ -96,9 +99,36 @@ section {
     top: 10%;
 }
 
-.card-div {
+.dealer-card-div {
     position: absolute;
     height: 20vh;
+    top: -30vh;
+    animation: deal 130ms forwards; 
+}
+.user-card-div {
+    position: absolute;
+    height: 20vh;
+    top: -30vh;
+    animation: deal 130ms forwards; 
+}
+
+
+
+
+@keyframes deal {
+    0% {top: -20vh;}
+    20% {top: -10vh;}
+    40% {top: 2vh;}
+    50% {top: 3vh}
+    60% {top: 4vh;}
+    70% {top: 5vh}
+    80% {top: 6vh;}
+    90% {top: 7vh}
+    100% {top: 8vh;}
+}
+
+#moneyDisplay, .funds, #betDisplay {
+    color: red;
 }
 
 .card-img {

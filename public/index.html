@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./deck/ace_of_spades.png" type="image/x-icon">
-    <title>Black Jack</title>
-
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./deck/ace_of_spades.png" type="image/x-icon">
+        <title>Black Jack</title>
+        
+        <script src="index.js" defer></script>
 
 </head>
 
@@ -19,6 +20,9 @@
                 <h2>Scores</h2>
                 <h3>Dealer: <span id="dealerScoreDisp"></span></h3>
                 <h3>User: <span id="userScoreDisp"></span></h3>
+                <h2>Available Funds</h2>
+                <h3 class="funds">Money: <span id="moneyDisplay"></span></h3>
+                <h3 class="funds">Bet: <span id="betDisplay"></span></h3>
             </div>
         </section>
         <section id="userSection">
@@ -41,9 +45,13 @@
                 <button class="btn" id="doubleBtn">Double</button>
                 <button class="btn" id="splitBtn">Split</button>
             </div>
+            <div class="end-btns">
+                <h2 id="resultsDisplay"></h2>
+                <button class="btn" id="newBtn">New Deal</button>
+                <button class="btn" id="sameBtn">Same Bet</button>
+            </div>
         </section>
     </main>
-    <script src="index.js"></script>
 </body>
 
 </html>
