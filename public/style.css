@@ -109,7 +109,7 @@ section {
     position: absolute;
     height: 20vh;
     top: -30vh;
-    animation: deal 130ms forwards; 
+    animation: across 130ms forwards; 
 }
 
 
@@ -125,6 +125,18 @@ section {
     80% {top: 6vh;}
     90% {top: 7vh}
     100% {top: 8vh;}
+}
+@keyframes across {
+    0% {top: -200vh;}
+    20% {top: -150vh;}
+    30% {top: -100vh}
+    40% {top: -50vh;}
+    50% {top: -25vh}
+    60% {top: -10vh;}
+    70% {top: -5vh}
+    80% {top: -3vh;}
+    90% {top: -1vh}
+    100% {top: 0vh;}
 }
 
 #moneyDisplay, .funds, #betDisplay {
