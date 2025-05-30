@@ -173,3 +173,25 @@ section {
 #splitBtn {
     display: none;
 }
+#playAgainBtn {
+    display: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: blue;
+    box-shadow: 0 10px 8px 0 rgba(0,0,0,0.6);
+}
+#resultsDisplay {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+.end-btns {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 40vh;
+    left: 30%;
+    width: 20%;
+    display: grid;
+
+}

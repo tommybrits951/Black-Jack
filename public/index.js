@@ -12,8 +12,7 @@ const btns = {
     hit: document.querySelector("#hitBtn"),
     stand: document.querySelector("#standBtn"),
     double: document.querySelector("#doubleBtn"),
-    newBtn: document.querySelector("#newBtn"),
-    sameBtn: document.querySelector("#sameBtn"),
+    again: document.querySelector("#playAgainBtn"),
 }
 const scoresCont = document.querySelector("#scores")
 const moneyAmountDisp = document.querySelector("#moneyDisplay")
@@ -250,11 +249,11 @@ function calcScore(player) {
 function checkAce(player) {
     if (player.name === "dealer" && player.playing === false) {
         if (player.hand[1] < 5 && player.score < 12 && player.ace === false) {
-            player.score += 10
+            player.score += 11
             player.ace = true
             player.scoreDisp.innerText = player.score
         } else if (player.hand[1] < 5 && player.score >= 12 && player.ace === true) {
-            player.score -= 10
+            player.score -= 11
             player.ace = false
             player.scoreDisp.innerText = player.score
         }
@@ -306,6 +305,7 @@ function stand() {
         }
             clearInterval()
             endDisp.style.display = "flex"
+            btns.again.style.display = "block"
             if (dealer.score > user.score && dealer.score <= 21) {
                 winDisplay("lose")
                 winnings("lose")
@@ -370,9 +370,16 @@ btns.bet.map((btn, idx) => {
 })
 
 
-
+function playAgain() {
+    resetDOM(user)
+    resetDOM(dealer)
+    hidePlayBtns()
+    hideBet()
+    endDisp.classList.add("hidden")
+}
 
 
 btns.deal.addEventListener("click", () => deal())
 btns.hit.addEventListener("click", () => hit(user))
 btns.stand.addEventListener("click", () => stand())
+btns.again.addEventListener("click", () => playAgain())
